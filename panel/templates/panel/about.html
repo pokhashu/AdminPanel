@@ -1,0 +1,9 @@
+{% extends 'panel/base.html' %}
+
+{% block content %}
+<h1>{{title}}</h1>
+{% for p in posts %}
+<h4>{{ p.city }}</h4><i>{{ p.time }}</i>
+{% endfor %}
+<p>Содержимое страницы о сайте
+{% endblock %}
